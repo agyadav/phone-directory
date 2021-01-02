@@ -1,22 +1,21 @@
-function App() {
-    return (
-        <div>
-            {/* <div>
-                <div className="header">
-                Phone Directory
+import React, { Component } from 'react';
+import Header from "./Header.js";
 
-            </div>
-            <button>Add</button>
+class App extends Component{
+    render() {
+        return (
             <div>
-                <span>Name</span><br/>
-                <span>Phone</span>
-            </div> */}
-            <label htmlFor="name">Name:</label>
-            <input id="name" type="text" placeholder="Type Here" defaultValue="Shilpa"/>
-        </div>
+                <Header/>
+                
+                <button>Add</button>
+                <div>
+                    <span> Name </span><br/>
+                    <span> Phone</span> 
+                </div>
+            </div>
 
-    );
+        );
+    }
+
 }
-
-
 export default App;
